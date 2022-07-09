@@ -75,7 +75,7 @@ Numeric values correspond to pixels. The default inputs correspond fairly well t
 
 ## Convenience Enums
 
-For readability, we use convenience enums that correspond to the internal defaults for readability.
+For readability, we use convenience enums that correspond to the internal defaults.
 
 **Enum Definition**
 
