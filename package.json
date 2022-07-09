@@ -1,0 +1,37 @@
+{
+  "name": "ems-web-app-breakpoint-detection",
+  "version": "0.0.1",
+  "author": "Chris Spence (https://educationalmediasolutions.com)",
+  "description": "This angular.io module includes a service and component to detect when an application's viewport crosses a breakpoint (e.g., from phone portrait to phone landscape)",
+  "peerDependencies": {
+    "@angular/common": "^13.2.0",
+    "@angular/core": "^13.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spencech/ems-web-app-breakpoint-detection.git"
+  },
+  "scripts": {
+    "publish": "git add -A . && git commit -m 'prepublish npm package' && npm version patch && ng build breakpoint && cd dist && npm publish"
+  },
+  "keywords": [
+    "ems",
+    "educational media solutions",
+    "educational",
+    "media",
+    "solutions",
+    "web app",
+    "web application",
+    "pipes",
+    "pipe",
+    "safe",
+    "tokens",
+    "sanitizer",
+    "sanitize",
+    "angular.io",
+    "angular"
+  ]
+}
