@@ -6,7 +6,7 @@ Find the [web application template source code on GitHub](https://github.com/spe
 
 Find a [working example of this component here](https://ems-web-app.educationalmediasolutions.com).
 
-This component includes a component and service that can be used to define and listen for breakpoint events (i.e., when a user resizes their window/view portal across one or more thresholds). 
+This package includes a component and service that can be used to define and listen for breakpoint events (i.e., when a user resizes their window/view portal across one or more thresholds). 
 
 **Note:** The service observable fires **only** on breakpoint change, not on every viewport resize event.
 
