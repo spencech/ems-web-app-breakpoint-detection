@@ -17,8 +17,6 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Usage: Module Import
 
-** Module Implementation **
-
 	import { NgModule } from '@angular/core';
 	import { BrowserModule } from '@angular/platform-browser';
 	import { AppComponent } from './app.component';

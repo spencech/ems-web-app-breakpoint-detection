@@ -3,6 +3,8 @@
   "version": "0.0.4",
   "author": "Chris Spence (https://educationalmediasolutions.com)",
   "description": "This angular.io module includes a service and component to detect when an application's viewport crosses a breakpoint (e.g., from phone portrait to phone landscape)",
+  "funding": "https://paypal.me/spencech",
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
     "@angular/core": "^13.2.0"
@@ -29,6 +31,9 @@
     "viewport",
     "detection",
     "resize",
-    "responsive"
+    "responsive",
+    "angular",
+    "angular.io",
+    "module"
   ]
 }
