@@ -17,6 +17,7 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Usage: Module Import
 
+```ts
 	import { NgModule } from '@angular/core';
 	import { BrowserModule } from '@angular/platform-browser';
 	import { AppComponent } from './app.component';
@@ -34,24 +35,28 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 	  bootstrap: [ AppComponent ]
 	})
 	export class AppModule { }
+```
 
 
 ## Usage: Template Implementation
 
+```html
 	<breakpoint [breakpoints]="{ xs: 0, sm: 544, md: 768, lg: 992, xl: 1200 }"></breakpoint>
+```
 
 The breakpoints input is shown in its default configuration here. You can use whatever conventions you like for defining key/value pairs on the input.
 
 E.g.,
-
+```html
 	<breakpoint [breakpoints]="{ mySmallestBp: 0, myMediumBp: 800, myLargestBp: 1600 }"></breakpoint>
-
+```
 Numeric values correspond to pixels. The default inputs correspond fairly well to phone portrait, phone landscape, tablet portrait, tablet landscape and desktop pixel widths. (Though some of the larger, wider phones get caught as "md" in portrait mode).
 
 ** Component Implementation **
 
 ## Usage: Component Implementation
 
+```ts
 	import { Component, OnInit } from '@angular/core';
 	import { BreakpointService, Breakpoint } from "ems-web-app-breakpoint-detection";
 
@@ -70,6 +75,7 @@ Numeric values correspond to pixels. The default inputs correspond fairly well t
 	    })
 	  }
 	}
+```
 
 ## Convenience Enums
 
@@ -77,6 +83,7 @@ For readability, we use convenience enums that correspond to the internal defaul
 
 **Enum Definition**
 
+```ts
 	enum BreakpointType {
 	  PhonePortrait = "xs",
 	  PhoneLandscape = "sm",
@@ -112,6 +119,7 @@ For readability, we use convenience enums that correspond to the internal defaul
 	    })
 	  }
 	}
+```
 
 
 ## Code scaffolding
