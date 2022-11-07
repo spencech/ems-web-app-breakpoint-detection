@@ -6,7 +6,7 @@ Find the [web application template source code on GitHub](https://github.com/spe
 
 Find a [working example of this component here](https://ems-web-app.educationalmediasolutions.com).
 
-This package includes a component and service that can be used to define and listen for breakpoint events (i.e., when a user resizes their window/view portal across one or more thresholds). 
+This package includes a component and service that can be used to define and listen for breakpoint events (i.e., when a user resizes their window/view portal across one or more thresholds).
 
 **Note:** The service observable fires **only** on breakpoint change, not on every viewport resize event.
 
@@ -24,11 +24,11 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 	@NgModule({
 	  declarations: [
-	    AppComponent 
+	    AppComponent
 	  ],
 	  imports: [
 	    BrowserModule,
-	    BreakpointModule 
+	    BreakpointModule
 	  ],
 	  providers: [ BreakpointService ],
 	  bootstrap: [ AppComponent ]
@@ -37,12 +37,12 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 
 ## Usage: Template Implementation
-	
+
 	<breakpoint [breakpoints]="{ xs: 0, sm: 544, md: 768, lg: 992, xl: 1200 }"></breakpoint>
 
 The breakpoints input is shown in its default configuration here. You can use whatever conventions you like for defining key/value pairs on the input.
 
-E.g., 
+E.g.,
 
 	<breakpoint [breakpoints]="{ mySmallestBp: 0, myMediumBp: 800, myLargestBp: 1600 }"></breakpoint>
 
@@ -62,7 +62,7 @@ Numeric values correspond to pixels. The default inputs correspond fairly well t
 	})
 	export class AppComponent implements OnInit  {
 	  constructor(private breakpointService: BreakpointService) { }
-	  
+
 	  ngOnInit() {
 	    this.breakpointService.currentBreakpoint.subscribe((bp?: Breakpoint) => {
 	      console.log(bp?.type); // e.g., "sm"
@@ -104,9 +104,9 @@ For readability, we use convenience enums that correspond to the internal defaul
 	})
 	export class AppComponent implements OnInit  {
 	  constructor(private breakpoint: BreakpointService) { }
-	  
+
 	  ngOnInit() {
-	    this.breakpoint.currentBreakpoint.subscribe((bp?: Breakpoing) => {
+	    this.breakpoint.currentBreakpoint.subscribe((bp?: Breakpoint) => {
 	      console.log(bp?.value < BreakpointValue.TabletPortrait); // e.g., true
 	      console.log(bp?.type === BreakpointType.PhoneLandscape); //e.g., true
 	    })
@@ -117,7 +117,7 @@ For readability, we use convenience enums that correspond to the internal defaul
 ## Code scaffolding
 
 Run `ng generate component component-name --project breakpoint` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project breakpoint`.
-> Note: Don't forget to add `--project breakpoint` or else it will be added to the default project in your `angular.json` file. 
+> Note: Don't forget to add `--project breakpoint` or else it will be added to the default project in your `angular.json` file.
 
 ## Build
 
